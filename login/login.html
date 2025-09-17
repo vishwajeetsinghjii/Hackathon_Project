@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Chikitsa Connect</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="login-container">
+    <h1>Chikitsa Connect</h1>
+    <h2>Login to your account</h2>
+
+    <!-- Login Form -->
+    <form class="login-form" onsubmit="return handleLogin(event)">
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="input-group">
+        <label for="password">Password</label>
+        <div class="password-wrapper">
+          <input type="password" id="password" placeholder="Enter your password" required>
+          <span class="toggle-password" onclick="togglePassword()">👁️</span>
+        </div>
+      </div>
+
+      <div class="options">
+        <label>
+          <input type="checkbox" id="remember"> Remember me
+        </label>
+        <a href="forgot-password.html">Forgot Password?</a>
+      </div>
+
+      <button type="submit" class="btn-primary">Login</button>
+    </form>
+
+    <!-- Divider -->
+    <div class="divider">OR</div>
+
+    <!-- Social Logins -->
+    <div class="social-login">
+      <button class="btn-google" onclick="socialLogin('Google')">Login with Google</button>
+      <button class="btn-facebook" onclick="socialLogin('Facebook')">Login with Facebook</button>
+    </div>
+
+    <p class="signup-text">Don't have an account? <a href="signup.html">Sign Up</a></p>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>

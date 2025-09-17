@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chikitsa Connect</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+<header>
+  <nav class="navbar">
+    <h1>Chikitsa Connect</h1>
+    <button onclick="goToLogin()">Get Started</button>
+  </nav>
+  <p>Bringing Doctors & Medicines to Every Village</p>
+</header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Connecting Health, Doctors & Medicine</h2>
+    <p>Your one-stop platform for healthcare access, medicine delivery, and community support.</p>
+    <button class="btn-primary" onclick="goTosignUp()">Join Now</button>
+    <button class="btn-secondary" onclick="learnMore()">Learn More</button>
+  </section>
+  
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="feature">
+      <h3>👨‍⚕️ Doctor Access</h3>
+      <p>Consult doctors anytime, anywhere, directly from the platform.</p>
+    </div>
+    <div class="feature">
+      <h3>💊 Medicine Delivery</h3>
+      <p>Get medicines delivered at your doorstep with just a few clicks.</p>
+    </div>
+    <div class="feature">
+      <h3>🤝 Community Support</h3>
+      <p>Join health discussions and get advice from peers and experts.</p>
+    </div>
+  </section>
+
+  <link rel="stylesheet" href="map_integration/style.css">
+<section class="map-section">
+  <h2>Find Nearby Doctors & Track Medicine Delivery</h2>
+  <div id="map"></div>
+  <button id="locateBtn">📍 Show My Location</button>
+  <button id="trackBtn">🚚 Track My Medicine</button>
+</section>
+
+<!-- Google Maps API -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9KPOveSydhuJppXbpdg817YCeTYPuSIw&callback=initMap" async defer></script>
+<script src="map_integration/script.js"></script>
+
+
+    <!-- Counters -->
+  <section class="counters">
+    <div class="counter">
+      <span id="doctors">0</span>
+      Doctors
+    </div>
+    <div class="counter">
+      <span id="patients">0</span>
+      Patients
+    </div>
+    <div class="counter">
+      <span id="availability">0</span>
+      24/7 Availability
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Chikitsa Connect | All Rights Reserved</p>
+  </footer>
+
+   <script src="script.js"></script>
+
+</body>
+</html>

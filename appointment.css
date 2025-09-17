@@ -1,0 +1,88 @@
+.consult-doctors-section {
+  background: #fff;
+  padding: 2rem 1.5rem;
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+.consult-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.consult-header h2 {
+  font-size: 2rem;
+  margin: 0 0 0.25rem 0;
+}
+
+.consult-header p {
+  margin: 0;
+  color: #555;
+  font-size: 1rem;
+}
+
+.view-all-link {
+  align-self: flex-start;
+  background: none;
+  border: 1px solid #47c0e3;
+  color: #47c0e3;
+  padding: 0.5rem 1.3rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.view-all-link:hover {
+  background: #eaf8fc;
+  color: #3da1c2;
+}
+
+.consult-cards {
+  display: flex;
+  justify-content: start;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.consult-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 180px;
+  background: none;
+  border: none;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.consult-card img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: #f0f5fd;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.consult-title {
+  font-size: 1.1rem;
+  color: #222;
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+}
+
+.consult-link {
+  color: #27b6db;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 0.3rem;
+  display: inline-block;
+  transition: color 0.2s;
+}
+
+.consult-link:hover {
+  color: #159cb5;
+}
