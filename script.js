@@ -38,3 +38,16 @@ const observer = new IntersectionObserver((entries, observer) => {
 }, { threshold: 0.5 }); // trigger when 50% visible
 
 observer.observe(document.querySelector(".counters"));
+app.get('/webhook', (req, res) => {
+    const VERIFY_TOKEN = 'MY_SECRET_TOKEN'; // same as in Meta Dashboard
+    const mode = req.query['hub.mode'];
+    const token = req.query['hub.verify_token'];
+    const challenge = req.query['hub.challenge'];
+
+    if (mode === 'subscribe' && token === VERIFY_TOKEN) {
+        console.log('Webhook verified!');
+        res.status(200).send(challenge); // MUST send back the challenge
+    } else {
+        res.sendStatus(403);
+    }
+});
